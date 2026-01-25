@@ -1,0 +1,210 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+    .container {
+        width: 95%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .header-mob {
+        color: #EBEBD3;
+        padding: 1em 0;
+        position: relative;
+    }
+
+    .header-mob::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+    .logo {
+        width: 100px;
+        float: left;
+        font-size: 1rem;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .logo span {
+        font-weight: 400;
+    }
+
+    .site-nav {
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        width: 100%;
+        background: #464655;
+        clip-path: circle(0px at top center);
+        transition: clip-path ease-in-out 750ms;
+        /*   display: none; */
+    }
+
+    .site-nav--open {
+        clip-path: circle(250% at top right);
+        /*   display: block; */
+    }
+
+    .site-nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .site-nav li {
+        border-bottom: 1px solid #575766;
+    }
+
+    .site-nav li:last-child {
+        border-bottom: none;
+    }
+
+    .site-nav a {
+        color: #EBEBD3;
+        display: block;
+        padding: 2em 4em 2em 1.5em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 250ms ease-in-out;
+    }
+
+    .site-nav a:hover,
+    .site-nav a:focus {
+        background: #E4B363;
+        color: #464655;
+    }
+
+    .site-nav--icon {
+        display: inline-block;
+        font-size: 1.5em;
+        margin-right: 1em;
+        width: 1.1em;
+        text-align: right;
+        color: rgba(255, 255, 255, .5);
+        transition: all 250ms ease-in-out;
+    }
+
+    .site-nav a:hover .site-nav--icon,
+    .site-nav a:focus .site-nav--icon {
+        color: #464655;
+    }
+
+    .menu-toggle {
+        padding: 1em;
+        position: absolute;
+        top: .5em;
+        right: .5em;
+        cursor: pointer;
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        display: block;
+        background: #EBEBD3;
+        height: 3px;
+        width: 1.75em;
+        border-radius: 3px;
+        transition: all ease-in-out 500ms;
+    }
+
+    .hamburger::before {
+        transform: translateY(-6px);
+    }
+
+    .hamburger::after {
+        transform: translateY(3px);
+    }
+
+    .open .hamburger {
+        transform: rotate(45deg);
+    }
+
+    .open .hamburger::before {
+        opacity: 0;
+    }
+
+    .open .hamburger::after {
+        transform: translateY(-3px) rotate(-90deg);
+    }
+
+    @media (min-width: 767px) {
+
+        .header-mob {
+            display: none;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .site-nav {
+            height: auto;
+            width: auto;
+            position: relative;
+            background: transparent;
+            float: right;
+            clip-path: initial;
+        }
+
+        .site-nav li {
+            display: inline-block;
+            border: none;
+        }
+
+        .site-nav a {
+            padding: 0;
+            margin-left: 3em;
+        }
+
+        .site-nav a:hover,
+        .site-nav a:focus {
+            background: transparent;
+        }
+
+        .site-nav--icon {
+            display: none;
+        }
+
+    }
+</style>
+<header class="header-mob">
+    <div class="container">
+        <a href="rhmtek.com">
+            <img class="logo" src="https://www.rhmtek.com/wp-content/uploads/2025/07/Logo-768x238.png" alt="Logo">
+        </a>
+
+        <nav class="site-nav">
+            <ul>
+                <li><a href=""><i class="fa fa-home site-nav--icon"></i>ABOUT US</a></li>
+                <li><a href=""><i class="fa fa-info site-nav--icon"></i>PRODUCTS</a></li>
+                <li><a href=""><i class="fa fa-pencil site-nav--icon"></i>PLATFORM</a></li>
+                <li><a href=""><i class="fa fa-envelope site-nav--icon"></i>CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle">
+            <div class="hamburger"></div>
+        </div>
+
+    </div>
+
+</header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var menuToggle = document.querySelector('.menu-toggle');
+        var siteNav = document.querySelector('.site-nav');
+
+        if (menuToggle && siteNav) {
+            menuToggle.addEventListener('click', function () {
+                siteNav.classList.toggle('site-nav--open');
+                this.classList.toggle('open');
+            });
+        }
+    });
+</script>

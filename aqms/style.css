@@ -1,0 +1,493 @@
+.rhmtek-wrapper {
+    /* Brochure Palette */
+    --color-teal: #4db6ac;
+    /* Brighter teal from brochure footer */
+    --color-teal-dark: #2a8a80;
+    --color-lime: #cfdf45;
+    /* Soft lime green */
+    --color-beige: #c4b08b;
+    /* Gold/Beige header */
+    --color-blue-dark: #1e3a5f;
+    /* Dark text/headers */
+    --color-orange: #f57f20;
+    /* For checks */
+    --color-bg-light: #ffffff;
+
+    --font-main: 'Aspekta', sans-serif;
+
+    --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    font-family: var(--font-main);
+    color: #444;
+    background: white;
+    /* overflow-x: hidden; Removed to avoid clipping in WP context usually, but kept if needed on wrapper */
+    line-height: 1.6;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10vw;
+    border-radius: 20px;
+    z-index: 5;
+}
+
+.rhmtek-wrapper * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: var(--color-blue-dark);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px 0;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #555;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    color: var(--color-teal);
+}
+
+.btn-contact {
+    background: var(--color-teal);
+    color: white !important;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--color-teal);
+}
+
+/* Brochure Hero */
+.brochure-hero {
+    padding: 60px 0;
+    position: relative;
+    margin-top: 5vw;
+}
+
+.hero-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.composition-wrapper {
+    position: relative;
+    height: 500px;
+}
+
+.hero-dash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--shadow-soft);
+    z-index: 1;
+}
+
+.hero-device {
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    width: 40%;
+    z-index: 2;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Big geometric shape behind hero content similar to brochure */
+.hero-shape-bg {
+    position: absolute;
+    top: -50px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: var(--color-blue-dark);
+    opacity: 0.03;
+    transform: rotate(45deg);
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--color-blue-dark);
+    margin-bottom: 5px;
+}
+
+.hero-content h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color-teal);
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 30px;
+    text-align: right;
+    /* Matching brochure style slightly */
+    border-bottom: 3px solid var(--color-orange);
+    display: inline-block;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.key-features-list h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--color-blue-dark);
+}
+
+.key-features-list ul {
+    display: grid;
+    gap: 12px;
+}
+
+.key-features-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.key-features-list li i {
+    color: var(--color-orange);
+    font-size: 1.1rem;
+}
+
+.hero-summary {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 3px solid var(--color-teal);
+}
+
+.hero-summary p {
+    margin-top: 15px;
+    width: 100%;
+    /* Reset width for text */
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Headers with Angled Background */
+.angled-header {
+    background: var(--color-beige);
+    padding: 15px 0;
+    margin-bottom: 40px;
+    /* Create the angled cut on the right */
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);
+    width: 100%;
+    max-width: 600px;
+    /* Limit width like the brochure tab */
+    border-radius: 0 10px 0 0;
+    /* Slight round logic if needed, but polygon overrides */
+}
+
+.angled-header h2 {
+    color: white;
+    font-size: 1.6rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+/* Hardware Section */
+.hardware-section {
+    padding: 60px 0;
+    background: #fdfdfd;
+}
+
+.hardware-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+    gap: 40px;
+}
+
+.spec-group {
+    margin-bottom: 30px;
+}
+
+.spec-group h4 {
+    font-size: 1.1rem;
+    color: var(--color-blue-dark);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid var(--color-beige);
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.spec-group h4 i {
+    color: var(--color-teal);
+    /* Or the icon color from brochure seems to be light blue/teal group icon */
+}
+
+.spec-group ul {
+    margin-left: 10px;
+}
+
+.spec-group li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    position: relative;
+    padding-left: 15px;
+}
+
+.spec-group li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-blue-dark);
+    font-weight: bold;
+}
+
+.hardware-visual img {
+    width: 100%;
+    margin-top: 40px;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.15));
+}
+
+/* Platform Section */
+.platform-section {
+    background: #fdfdfd;
+
+    /* Light background for contrast if wanted, or white */
+}
+
+.platform-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    /* Softer shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+.plat-text h4 {
+    font-size: 1.25rem;
+    color: var(--color-blue-dark);
+    margin-bottom: 20px;
+    /* Removed inline-block underline style for a cleaner card look, or can keep it */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.plat-text h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: var(--color-teal);
+    border-radius: 2px;
+}
+
+.plat-text h4 i {
+    margin-right: 10px;
+    color: var(--color-teal);
+}
+
+.plat-text ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.plat-text ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-orange);
+    /* Changed bullet to orange for contrast */
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+/* Footer */
+.angled-footer {
+    background: var(--color-teal);
+    /* Teal Background */
+    padding: 60px 0 40px;
+    position: relative;
+    margin-top: 80px;
+    /* Angled top edge */
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    color: white;
+}
+
+.footer-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    /* Compensate for angle */
+}
+
+.cta-text h2 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.email-link {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 2px solid white;
+}
+
+.qr-code {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--color-blue-dark);
+}
+
+.qr-code img {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-msg {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 20px;
+}
+
+
+/* Specs/Responsive */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    /* Simplified for now */
+
+    .hero-layout,
+    .hardware-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .angled-header {
+        max-width: 100%;
+        clip-path: none;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .composition-wrapper {
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .hero-dash {
+        position: relative;
+    }
+
+    .hero-device {
+        position: absolute;
+        bottom: -20px;
+        right: -10px;
+        left: auto;
+        width: 30%;
+    }
+
+    .angled-footer {
+        clip-path: none;
+        margin-top: 0;
+    }
+
+    .footer-cta {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,765 @@
+<style>
+    .rhmtek-wrapper {
+        /* Brochure Palette */
+        --color-teal: #4db6ac;
+        /* Brighter teal from brochure footer */
+        --color-teal-dark: #2a8a80;
+        --color-lime: #cfdf45;
+        /* Soft lime green */
+        --color-beige: #c4b08b;
+        /* Gold/Beige header */
+        --color-blue-dark: #1e3a5f;
+        /* Dark text/headers */
+        --color-orange: #f57f20;
+        /* For checks */
+        --color-bg-light: #ffffff;
+
+        --font-main: 'Aspekta', sans-serif;
+
+        --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+        font-family: var(--font-main);
+        color: #444;
+        background: white;
+        /* overflow-x: hidden; Removed to avoid clipping in WP context usually, but kept if needed on wrapper */
+        line-height: 1.6;
+        position: relative;
+        width: 100%;
+        padding-bottom: 10vw;
+        border-radius: 20px;
+        z-index: 5;
+        overflow: hidden;
+    }
+
+    .rhmtek-wrapper * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: var(--color-blue-dark);
+        font-weight: 700;
+    }
+
+    a {
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 15px 0;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        color: #555;
+        font-weight: 500;
+        font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+        color: var(--color-teal);
+    }
+
+    .btn-contact {
+        background: var(--color-teal);
+        color: white !important;
+        padding: 8px 20px;
+        border-radius: 20px;
+    }
+
+    .menu-toggle {
+        display: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: var(--color-teal);
+    }
+
+    /* Brochure Hero */
+    .brochure-hero {
+        padding: 60px 0;
+        position: relative;
+        margin-top: 5vw;
+    }
+
+    .hero-layout {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .composition-wrapper {
+        position: relative;
+        height: 500px;
+    }
+
+    .hero-dash {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: var(--shadow-soft);
+        z-index: 1;
+    }
+
+    .hero-device {
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        width: 40%;
+        z-index: 2;
+        filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Big geometric shape behind hero content similar to brochure */
+    .hero-shape-bg {
+        position: absolute;
+        top: -50px;
+        right: -200px;
+        width: 600px;
+        height: 600px;
+        background: var(--color-blue-dark);
+        opacity: 0.03;
+        transform: rotate(45deg);
+        z-index: -1;
+        border-radius: 50px;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+        line-height: 1;
+        color: var(--color-blue-dark);
+        margin-bottom: 5px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: var(--color-teal);
+        margin-bottom: 20px;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #777;
+        margin-bottom: 30px;
+        text-align: right;
+        /* Matching brochure style slightly */
+        border-bottom: 3px solid var(--color-orange);
+        display: inline-block;
+        padding-bottom: 5px;
+        width: 100%;
+    }
+
+    .key-features-list h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: var(--color-blue-dark);
+    }
+
+    .key-features-list ul {
+        display: grid;
+        gap: 12px;
+    }
+
+    .key-features-list li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    .key-features-list li i {
+        color: var(--color-orange);
+        font-size: 1.1rem;
+    }
+
+    .hero-summary {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 3px solid var(--color-teal);
+    }
+
+    .hero-summary p {
+        margin-top: 15px;
+        width: 100%;
+        /* Reset width for text */
+        font-size: 1rem;
+        color: #666;
+    }
+
+    /* Headers with Angled Background */
+    .angled-header {
+        background: var(--color-beige);
+        padding: 15px 0;
+        margin-bottom: 40px;
+        /* Create the angled cut on the right */
+        clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);
+        width: 100%;
+        max-width: 600px;
+        /* Limit width like the brochure tab */
+        border-radius: 0 10px 0 0;
+        /* Slight round logic if needed, but polygon overrides */
+    }
+
+    .angled-header h2 {
+        color: white;
+        font-size: 1.6rem;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 0;
+    }
+
+    /* Hardware Section */
+    .hardware-section {
+        padding: 60px 0;
+    }
+
+    .hardware-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 0.8fr;
+        gap: 40px;
+    }
+
+    .spec-group {
+        margin-bottom: 30px;
+    }
+
+    .spec-group h4 {
+        font-size: 1.1rem;
+        color: var(--color-blue-dark);
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 2px solid var(--color-beige);
+        padding-bottom: 5px;
+        display: inline-block;
+    }
+
+    .spec-group h4 i {
+        color: var(--color-teal);
+        /* Or the icon color from brochure seems to be light blue/teal group icon */
+    }
+
+    .spec-group ul {
+        margin-left: 10px;
+    }
+
+    .spec-group li {
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+        position: relative;
+        padding-left: 15px;
+    }
+
+    .spec-group li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--color-blue-dark);
+        font-weight: bold;
+    }
+
+    .hardware-visual img {
+        width: 100%;
+        margin-top: 40px;
+
+    }
+
+    /* Platform Section */
+    .platform-section {}
+
+    .platform-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 30px;
+    }
+
+    .feature-card {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        /* Softer shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid rgba(0, 0, 0, 0.03);
+        height: 100%;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .plat-text h4 {
+        font-size: 1.25rem;
+        color: var(--color-blue-dark);
+        margin-bottom: 20px;
+        /* Removed inline-block underline style for a cleaner card look, or can keep it */
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .plat-text h4::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background: var(--color-teal);
+        border-radius: 2px;
+    }
+
+    .plat-text h4 i {
+        margin-right: 10px;
+        color: var(--color-teal);
+    }
+
+    .plat-text ul li {
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 20px;
+        color: #666;
+        font-size: 0.95rem;
+    }
+
+    .plat-text ul li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--color-orange);
+        /* Changed bullet to orange for contrast */
+        font-weight: bold;
+        font-size: 1.2em;
+        line-height: 1;
+    }
+
+    /* Footer */
+    .angled-footer {
+        background: var(--color-teal);
+        /* Teal Background */
+        padding: 60px 0 40px;
+        position: relative;
+        margin-top: 80px;
+        /* Angled top edge */
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+        color: white;
+    }
+
+    .footer-cta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        /* Compensate for angle */
+    }
+
+    .cta-text h2 {
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .email-link {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        border-bottom: 2px solid white;
+    }
+
+    .qr-code {
+        text-align: center;
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        color: var(--color-blue-dark);
+    }
+
+    .qr-code img {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .footer-msg {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 0.95rem;
+        opacity: 0.9;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 20px;
+    }
+
+
+    /* Specs/Responsive */
+    @media (max-width: 768px) {
+        .menu-toggle {
+            display: block;
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        /* Simplified for now */
+
+        .hero-layout,
+        .hardware-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .angled-header {
+            max-width: 100%;
+            clip-path: none;
+            border-radius: 0;
+            text-align: center;
+        }
+
+        .composition-wrapper {
+            height: auto;
+            margin-bottom: 40px;
+        }
+
+        .hero-dash {
+            position: relative;
+        }
+
+        .hero-device {
+            position: absolute;
+            bottom: -20px;
+            right: -10px;
+            left: auto;
+            width: 30%;
+        }
+
+        .angled-footer {
+            clip-path: none;
+            margin-top: 0;
+        }
+
+        .footer-cta {
+            flex-direction: column;
+            text-align: center;
+            gap: 30px;
+        }
+    }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://unpkg.com/scrollreveal"></script>
+<div class="rhmtek-wrapper">
+    <section id="hero" class="brochure-hero">
+        <div class="container">
+            <div class="hero-layout">
+                <div class="hero-visuals">
+                    <!-- Composition of Hardware & Dashboard -->
+                    <div class="composition-wrapper">
+                        <img src="https://www.rhmtek.com/wp-content/uploads/2025/07/WhatsApp-Image-2025-07-28-at-11.35.49-AM-e1769124135552.jpeg"
+                            class="hero-dash" alt="Dashboard">
+                        <img src="https://www.rhmtek.com/wp-content/uploads/2025/07/Screenshot-2025-07-16-at-19.18.13-720x1024-1-1.webp"
+                            class="hero-device" alt="AQMS Device">
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <div class="hero-shape-bg"></div>
+                    <h1>AQMS</h1>
+                    <h2>Air Quality Monitoring System</h2>
+                    <p class="tagline">Seamless, Highly Accurate,<br>and Real-time Air Quality Monitoring</p>
+
+                    <div class="key-features-list">
+                        <h3>Key Features :</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> 24/7 real-time air quality monitoring</li>
+                            <li><i class="fas fa-check-circle"></i> Multi-pollutant sensors: PM2.5, PM10, CO, NO2,
+                                O3,
+                                and more</li>
+                            <li><i class="fas fa-check-circle"></i> Web and mobile-based online dashboard</li>
+                            <li><i class="fas fa-check-circle"></i> Live station map with interactive features</li>
+                            <li><i class="fas fa-check-circle"></i> Historical data storage and trend visualization
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Automated reporting</li>
+                            <li><i class="fas fa-check-circle"></i> Device and sensor management</li>
+                        </ul>
+                    </div>
+
+                    <div class="hero-summary">
+                        <p>Our AQMS platform delivers seamless, real-time air quality monitoring with high-precision
+                            sensors and an intuitive online dashboard — making clean air data easily accessible,
+                            anytime
+                            and anywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Specs Section -->
+    <section id="hardware" class="hardware-section">
+        <div class="angled-header">
+            <div class="container">
+                <h2>Sensor & Hardware Specifications</h2>
+            </div>
+        </div>
+
+        <div class="container hardware-grid">
+            <div class="hardware-text">
+                <div class="spec-group">
+                    <h4><i class="fas fa-microscope"></i> Sensor Specifications</h4>
+                    <ul>
+                        <li><strong>Target Parameters:</strong> CO, SO₂, NO₂, O₃, PM2.5, PM10, temperature,
+                            humidity,
+                            wind, solar radiation, and rainfall</li>
+                        <li><strong>Response & resume time:</strong> ≤ 120 seconds</li>
+                        <li><strong>Resolution:</strong> 1 µg/m³</li>
+                        <li><strong>Sensor lifespan:</strong> 3 years</li>
+                        <li><strong>Operating Conditions:</strong> -20°C to 50°C and 15-90% RH</li>
+                        <li><strong>Storage temperature:</strong> -20°C to 50°C</li>
+                    </ul>
+                </div>
+
+                <div class="spec-group">
+                    <h4><i class="fas fa-wifi"></i> Device Connectivity</h4>
+                    <ul>
+                        <li>Supports LoRaWAN, Wi-Fi, LTE, and NB-IoT</li>
+                        <li>Remote device access and configuration</li>
+                        <li>Real-time data transmission to cloud server</li>
+                        <li>Secure and encrypted communication protocols</li>
+                        <li>Integrated GPS/GNSS for high-accuracy mobile monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="spec-group">
+                    <h4><i class="fas fa-bolt"></i> Power & Efficiency</h4>
+                    <ul>
+                        <li>Internal battery powered for 3 years</li>
+                        <li>Power consumption ≤ 1W</li>
+                        <li>Solar power (Optional)</li>
+                    </ul>
+                </div>
+
+                <div class="spec-group">
+                    <h4><i class="fas fa-shield-alt"></i> Environmental Durability</h4>
+                    <ul>
+                        <li>Operating temperature: -20°C to 50°C</li>
+                        <li>Humidity: 15-90% RH (non-condensing)</li>
+                        <li>Barometric pressure: 81-121 kPa</li>
+                        <li>IP65 rating</li>
+                    </ul>
+                </div>
+
+                <div class="spec-group">
+                    <h4><i class="fas fa-ruler-combined"></i> Device Dimensions & Build</h4>
+                    <ul>
+                        <li>Enclosure material: UV-resistant ABS plastic</li>
+                        <li>Dimensions: 220 × 180 × 80 mm</li>
+                        <li>Weight: Approximately 1.5 kg</li>
+                        <li>Mounting options: Compatible with wall and pole mounting brackets</li>
+                        <li>Ingress protection: weatherproof for outdoor installation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="hardware-visual">
+                <img src="https://www.rhmtek.com/wp-content/uploads/2025/07/Screenshot-2025-07-16-at-19.18.13-720x1024-1.webp"
+                    alt="Full Station">
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Section -->
+    <section id="platform" class="platform-section">
+        <div class="angled-header">
+            <div class="container">
+                <h2>Platform Features & Capabilities</h2>
+            </div>
+        </div>
+
+        <div class="container platform-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+                <div class="plat-text">
+                    <h4><i class="fas fa-desktop"></i> Smart Monitoring Dashboard</h4>
+                    <ul>
+                        <li>Instantly visualize air quality conditions in real time</li>
+                        <li>Supports a wide range of parameters: PM2.5, PM10, CO, SO2, NO2, O3, temperature,
+                            humidity,
+                            and more</li>
+                        <li>Clear trend graphs for daily, weekly, and monthly insights</li>
+                        <li>Real-time map of device locations and coverage zones</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+                <div class="plat-text">
+                    <h4><i class="fas fa-chart-bar"></i> Data History & Analytics</h4>
+                    <ul>
+                        <li>Access historical data by specific date or custom time range</li>
+                        <li>Periodically store and manage air quality records with ease</li>
+                        <li>Analyze long-term trends and support predictive pollution forecasting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+                <div class="plat-text">
+                    <h4><i class="fas fa-map-marked-alt"></i> Interactive Air Quality Map</h4>
+                    <ul>
+                        <li>Display device locations on a live map with real-time AQI values</li>
+                        <li>Show air quality status based on AQI classification ranges</li>
+                        <li>Visualize spatial distribution of air quality data across monitored areas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-card">
+                <div class="plat-text">
+                    <h4><i class="fas fa-file-pdf"></i> Automated Reporting</h4>
+                    <ul>
+                        <li>Generate daily, weekly, or monthly reports</li>
+                        <li>Export structured PDF reports with charts and comprehensive data summaries</li>
+                        <li>Designed to support environmental audits and ensure regulatory compliance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="feature-card">
+                <div class="plat-text">
+                    <h4><i class="fas fa-cogs"></i> Device & Sensor Management</h4>
+                    <ul>
+                        <li>Add, edit, or deactivate sensors and devices</li>
+                        <li>Monitor device connection status (online/offline) in real time</li>
+                        <li>Configure and manage device connectivity with ease</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>s
+<script>
+    // Initialize ScrollReveal
+    const sr = ScrollReveal({
+        origin: 'bottom',
+        distance: '20px',
+        duration: 1000,
+        delay: 100,
+        easing: 'ease-in-out',
+        reset: false,
+        viewFactor: 0.1, // Trigger earlier (10% visibility)
+        mobile: true
+    });
+
+    // Hero
+    sr.reveal('.hero-content h1', { delay: 100 });
+    sr.reveal('.hero-content h2', { delay: 200 });
+    sr.reveal('.tagline', { delay: 300 });
+    sr.reveal('.key-features-list', { delay: 400 });
+    sr.reveal('.composition-wrapper', { origin: 'left', delay: 200 });
+
+    // Angled Headers
+    sr.reveal('.angled-header', { origin: 'left', distance: '50px', duration: 1200 });
+
+    // Hardware
+    sr.reveal('.spec-group', { interval: 100 });
+    sr.reveal('.hardware-visual', { origin: 'bottom', delay: 300 });
+
+    // Platform
+    sr.reveal('.feature-card', { interval: 100 }); // Updated selector from platform-item
+
+    // Footer
+    sr.reveal('.footer-cta', { delay: 200 });
+
+    // Mobile Menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            // Basic toggle for now as CSS has display:none for nav-links on mobile
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+                menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '60px'; // Adjust based on navbar height
+                navLinks.style.left = '0';
+                navLinks.style.width = '100%';
+                navLinks.style.background = 'white';
+                navLinks.style.padding = '20px';
+                navLinks.style.boxShadow = '0 5px 10px rgba(0,0,0,0.1)';
+                menuToggle.innerHTML = '<i class="fas fa-times"></i>';
+            }
+        });
+    }
+</script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
+<script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+
+<script>
+    const lenis = new Lenis({
+        smooth: true,
+        lerp: 0.1,
+        wheelMultiplier: 1,
+        infinite: false
+    });
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+</script>

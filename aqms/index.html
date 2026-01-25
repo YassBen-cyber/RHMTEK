@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHMTek | Air Quality Monitoring System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="rhmtek-wrapper">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo"><img src="https://via.placeholder.com/120x40?text=RHMtek" alt="RHMtek Logo"></div>
+                <!-- Using placeholder for logo as per generic requirements, but styling text if needed -->
+                <!-- <div class="logo-text">RHM<span>Tek</span></div> -->
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#hardware">Hardware</a></li>
+                    <li><a href="#platform">Platform</a></li>
+                    <li><a href="#contact" class="btn-contact">Contact Us</a></li>
+                </ul>
+                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+            </div>
+        </nav>
+
+        <!-- Brochure Intro Section -->
+        <section id="hero" class="brochure-hero">
+            <div class="container">
+                <div class="hero-layout">
+                    <div class="hero-visuals">
+                        <!-- Composition of Hardware & Dashboard -->
+                        <div class="composition-wrapper">
+                            <img src="https://placehold.co/400x300/2a3b4c/FFF?text=Dashboard+UI" class="hero-dash"
+                                alt="Dashboard">
+                            <img src="https://placehold.co/150x400/eeeeee/333?text=Device" class="hero-device"
+                                alt="AQMS Device">
+                        </div>
+                    </div>
+                    <div class="hero-content">
+                        <div class="hero-shape-bg"></div>
+                        <h1>AQMS</h1>
+                        <h2>Air Quality Monitoring System</h2>
+                        <p class="tagline">Seamless, Highly Accurate,<br>and Real-time Air Quality Monitoring</p>
+
+                        <div class="key-features-list">
+                            <h3>Key Features :</h3>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> 24/7 real-time air quality monitoring</li>
+                                <li><i class="fas fa-check-circle"></i> Multi-pollutant sensors: PM2.5, PM10, CO, NO2,
+                                    O3,
+                                    and more</li>
+                                <li><i class="fas fa-check-circle"></i> Web and mobile-based online dashboard</li>
+                                <li><i class="fas fa-check-circle"></i> Live station map with interactive features</li>
+                                <li><i class="fas fa-check-circle"></i> Historical data storage and trend visualization
+                                </li>
+                                <li><i class="fas fa-check-circle"></i> Automated reporting</li>
+                                <li><i class="fas fa-check-circle"></i> Device and sensor management</li>
+                            </ul>
+                        </div>
+
+                        <div class="hero-summary">
+                            <p>Our AQMS platform delivers seamless, real-time air quality monitoring with high-precision
+                                sensors and an intuitive online dashboard — making clean air data easily accessible,
+                                anytime
+                                and anywhere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hardware Specs Section -->
+        <section id="hardware" class="hardware-section">
+            <div class="angled-header">
+                <div class="container">
+                    <h2>Sensor & Hardware Specifications</h2>
+                </div>
+            </div>
+
+            <div class="container hardware-grid">
+                <div class="hardware-text">
+                    <div class="spec-group">
+                        <h4><i class="fas fa-microscope"></i> Sensor Specifications</h4>
+                        <ul>
+                            <li><strong>Target Parameters:</strong> CO, SO₂, NO₂, O₃, PM2.5, PM10, temperature,
+                                humidity,
+                                wind, solar radiation, and rainfall</li>
+                            <li><strong>Response & resume time:</strong> ≤ 120 seconds</li>
+                            <li><strong>Resolution:</strong> 1 µg/m³</li>
+                            <li><strong>Sensor lifespan:</strong> 3 years</li>
+                            <li><strong>Operating Conditions:</strong> -20°C to 50°C and 15-90% RH</li>
+                            <li><strong>Storage temperature:</strong> -20°C to 50°C</li>
+                        </ul>
+                    </div>
+
+                    <div class="spec-group">
+                        <h4><i class="fas fa-wifi"></i> Device Connectivity</h4>
+                        <ul>
+                            <li>Supports LoRaWAN, Wi-Fi, LTE, and NB-IoT</li>
+                            <li>Remote device access and configuration</li>
+                            <li>Real-time data transmission to cloud server</li>
+                            <li>Secure and encrypted communication protocols</li>
+                            <li>Integrated GPS/GNSS for high-accuracy mobile monitoring</li>
+                        </ul>
+                    </div>
+
+                    <div class="spec-group">
+                        <h4><i class="fas fa-bolt"></i> Power & Efficiency</h4>
+                        <ul>
+                            <li>Internal battery powered for 3 years</li>
+                            <li>Power consumption ≤ 1W</li>
+                            <li>Solar power (Optional)</li>
+                        </ul>
+                    </div>
+
+                    <div class="spec-group">
+                        <h4><i class="fas fa-shield-alt"></i> Environmental Durability</h4>
+                        <ul>
+                            <li>Operating temperature: -20°C to 50°C</li>
+                            <li>Humidity: 15-90% RH (non-condensing)</li>
+                            <li>Barometric pressure: 81-121 kPa</li>
+                            <li>IP65 rating</li>
+                        </ul>
+                    </div>
+
+                    <div class="spec-group">
+                        <h4><i class="fas fa-ruler-combined"></i> Device Dimensions & Build</h4>
+                        <ul>
+                            <li>Enclosure material: UV-resistant ABS plastic</li>
+                            <li>Dimensions: 220 × 180 × 80 mm</li>
+                            <li>Weight: Approximately 1.5 kg</li>
+                            <li>Mounting options: Compatible with wall and pole mounting brackets</li>
+                            <li>Ingress protection: weatherproof for outdoor installation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="hardware-visual">
+                    <img src="https://placehold.co/300x800/eeeeee/777?text=Full+Station+Mount" alt="Full Station">
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Section -->
+        <section id="platform" class="platform-section">
+            <div class="angled-header">
+                <div class="container">
+                    <h2>Platform Features & Capabilities</h2>
+                </div>
+            </div>
+
+            <div class="container platform-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="plat-text">
+                        <h4><i class="fas fa-desktop"></i> Smart Monitoring Dashboard</h4>
+                        <ul>
+                            <li>Instantly visualize air quality conditions in real time</li>
+                            <li>Supports a wide range of parameters: PM2.5, PM10, CO, SO2, NO2, O3, temperature,
+                                humidity,
+                                and more</li>
+                            <li>Clear trend graphs for daily, weekly, and monthly insights</li>
+                            <li>Real-time map of device locations and coverage zones</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="plat-text">
+                        <h4><i class="fas fa-chart-bar"></i> Data History & Analytics</h4>
+                        <ul>
+                            <li>Access historical data by specific date or custom time range</li>
+                            <li>Periodically store and manage air quality records with ease</li>
+                            <li>Analyze long-term trends and support predictive pollution forecasting</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="plat-text">
+                        <h4><i class="fas fa-map-marked-alt"></i> Interactive Air Quality Map</h4>
+                        <ul>
+                            <li>Display device locations on a live map with real-time AQI values</li>
+                            <li>Show air quality status based on AQI classification ranges</li>
+                            <li>Visualize spatial distribution of air quality data across monitored areas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="plat-text">
+                        <h4><i class="fas fa-file-pdf"></i> Automated Reporting</h4>
+                        <ul>
+                            <li>Generate daily, weekly, or monthly reports</li>
+                            <li>Export structured PDF reports with charts and comprehensive data summaries</li>
+                            <li>Designed to support environmental audits and ensure regulatory compliance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="plat-text">
+                        <h4><i class="fas fa-cogs"></i> Device & Sensor Management</h4>
+                        <ul>
+                            <li>Add, edit, or deactivate sensors and devices</li>
+                            <li>Monitor device connection status (online/offline) in real time</li>
+                            <li>Configure and manage device connectivity with ease</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer / Start Monitoring -->
+        <footer id="contact" class="angled-footer">
+            <div class="container">
+                <div class="footer-cta">
+                    <div class="cta-text">
+                        <h2>Start Monitoring Today</h2>
+                        <a href="mailto:info@rhmtek.com" class="email-link">info@rhmtek.com</a>
+                    </div>
+                    <div class="qr-code">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://platform.rhmtek.com"
+                            alt="QR Code">
+                        <span>Visit our platform</span>
+                    </div>
+                </div>
+                <div class="footer-msg">
+                    Empower your environmental goals with reliable, real-time air quality insights — enabling smarter
+                    decisions and sustainable impact.
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

